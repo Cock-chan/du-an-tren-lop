@@ -1,0 +1,83 @@
+/* Đặt chiều cao đầy đủ cho cả trang */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/* Thiết lập màu nền gradient cho trang */
+body {
+    background: white; /* Thay đổi màu nền */
+}
+
+/* Định dạng cho bảng */
+table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Căn giữa bảng và thêm khoảng cách */
+}
+
+/* Định dạng cho ô tiêu đề và ô dữ liệu */
+th, td {
+    padding: 15px;
+    background-color: rgba(3, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+}
+
+/* Định dạng cho phần đầu của bảng */
+thead th {
+    background-color: #55608f;
+}
+
+/* Định dạng cho phần thân của bảng */
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+    position: relative;
+}
+
+/* Hiệu ứng khi di chuột qua ô dữ liệu */
+tbody td:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+/* Định dạng cho tiêu đề chính */
+h1.text-center {
+    color: white; /* Màu đỏ cho tiêu đề */
+    font-weight: bold;
+    margin-top: 20px; /* Thêm khoảng cách trên tiêu đề */
+}
+
+/* Định dạng cho nút */
+.btn-outline-dark a,
+.btn-outline-info a,
+.btn-outline-danger a,
+.btn-outline-success a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-outline-dark a:hover,
+.btn-outline-info a:hover,
+.btn-outline-danger a:hover,
+.btn-outline-success a:hover {
+    color: #fff;
+}
+
+/* Định dạng cho các nút */
+.btn {
+    margin: 5px; /* Thêm khoảng cách giữa các nút */
+}
